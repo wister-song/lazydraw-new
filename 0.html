@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+body,
+html {
+    background: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.w1200 {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.headBox {
+    width: 100%;
+    background: url(i0.jpg) no-repeat center center;
+    height: 1082px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.headBox h3 {
+    text-align: right;
+    padding-top: 70px;
+}
+
+.headBox h3 a {
+    font-size: 24px;
+}
+
+.headBox h3 a:hover {
+    color: red;
+}
+
+.headBox .btn {
+    position: absolute;
+    width: 300px;
+    height: 98px;
+    top: 600px;
+    left: 50%;
+    margin-left: -150px;
+    background: #423A38;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.headBox .btn:hover {
+    background: white;
+}
+
+.headBox .btn:hover span {
+    color: #423A38;
+}
+
+.headBox .btn:hover p {
+    color: #423A38;
+}
+
+.headBox .btn span {
+    font-size: 28px;
+    color: white;
+    margin-top: 18px;
+    display: inline-block;
+}
+
+.headBox .btn p {
+    font-size: 18px;
+    color: white;
+    margin-top: 5px;
+}
+
+.box1 {
+    margin-top: 50px;
+}
+
+.box1 h3 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box1 img {
+    display: block;
+    margin: 0 auto;
+}
+
+.box2 {
+    padding-top: 200px;
+    background: black;
+}
+
+.box2 .w1200 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box2 .w1200 h3 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 400px;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+.box2 .w1200 h3 em {
+    font-style: normal;
+    display: block;
+    text-align: right;
+    font-size: 30px;
+}
+
+.box2 .w1200 h3 span {
+    font-size: 18px;
+    margin-top: 80px;
+    display: inline-block;
+    line-height: 32px;
+    font-weight: normal;
+}
+
+.box3 {
+    padding-top: 200px;
+    background: black;
+}
+
+.box3 .w1200 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box3 .w1200 h3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    color: white;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+.box3 .w1200 h3 p {
+    font-weight: normal;
+    text-align: center;
+}
+
+.box3 .w1200 div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box3 .w1200 div img {
+    margin: 20px 0;
+}
+
+.box3 .w1200 div p {
+    font-size: 30px;
+    color: white;
+}
+
+.box3 .w1200 div p:first-child {
+    font-size: 32px;
+}
+
+.box3 .w1200 div p:last-child {
+    font-size: 24px;
+}
+
+.box4 {
+    padding-top: 300px;
+    background: black;
+}
+
+.box4 .w1200 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box4 .w1200 div {
+    font-size: 30px;
+    color: white;
+}
+
+.box4 .w1200 div h3 {
+    text-align: center;
+    margin-top: -72px;
+    margin-bottom: 98px;
+}
+
+.box4 .w1200 img {
+    height: 476px;
+}
+
+.box4 .w1200 p {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 76px;
+}
+
+.box5 {
+    padding-top: 200px;
+    background: black;
+}
+
+.box5 h3 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box5 .w1200 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box5 .w1200 div.cur {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.box5 .w1200 div.cur1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.box5 .w1200 div.cur1 .a {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.box5 .w1200 div.cur1 .c {
+    margin-bottom: 30px;
+    text-align: right;
+    margin-left: 50px;
+}
+
+.box5 .w1200 div.cur1 .d {
+    text-align: right;
+    margin-left: 50px;
+}
+
+.box5 .w1200 div.cur1 .b {
+    margin-bottom: 200px;
+}
+
+.box5 .w1200 div span {
+    font-size: 24px;
+    color: white;
+}
+
+.box5 .w1200 div p {
+    font-size: 24px;
+    color: white;
+}
+
+.box6 {
+    padding-top: 200px;
+    background: black;
+}
+
+.box6 h3 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box6 .w1200 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box6 .w1200 div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.box6 .w1200 div p {
+    font-size: 24px;
+    color: white;
+}
+
+.box6 .w1200 div.cur p {
+    text-align: right;
+}
+
+.box7 {
+    padding-top: 200px;
+    background: black;
+}
+
+.box7 h3 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box7 .w1200 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box7 .w1200 div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.box7 .w1200 div p {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.box7 .w1200 div p em {
+    font-style: normal;
+    display: block;
+    font-size: 20px;
+    color: #999;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.box8 {
+    margin-top: 200px;
+}
+
+.box8 .w1200 h3 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.box8 .w1200 p {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+.box8 .w1200 div {
+    width: 700px;
+    height: 300px;
+    padding-top: 50px;
+    background: #141414;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.box8 .w1200 div span {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.box8 .w1200 div a {
+    background: #040404;
+    font-size: 18px;
+    color: white;
+    display: block;
+    width: 240px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.box8 .w1200 div a:hover {
+    background: white;
+    color: #040404;
+}
+
+.box8 .w1200>a {
+    background: #151515;
+    font-size: 18px;
+    color: white;
+    display: block;
+    width: 240px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    margin: 50px auto 100px;
+    border-radius: 5px;
+}
+
+.box8 .w1200>a:hover {
+    background: white;
+    color: #151515;
+}
+
+.box8>p {
+    font-size: 16px;
+    color: #999;
+    text-align: center;
+    margin-bottom: 20px;
+}
+    </style>
+    <title>lazydraw</title>
+</head>
+
+
+<body>
+    <div class="headBox">
+        <div class="w1200">
+            <h3>
+                <a href="">联系我们</a>
+            </h3>
+            <div class="btn">
+                <span>点击下载</span>
+                <p>Download</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box1">
+        <div class="w1200">
+            <h3>设计就是这么简单</h3>
+            <img src="i1.png" alt="">
+        </div>
+    </div>
+    <div class="box2">
+        <div class="w1200">
+            <h3>
+                <p>高效渲染引擎</p>
+                <em>虺</em>
+                <span>携手IPAD，开启2020专业设计工具新篇章。有了 ‘虺’，LAZYDRAW速度快到让很多笔记本电脑都羡慕。无论处理日常事务还是高图形性能要求的工作，各项操作都能快速流畅地进行。靠性能出彩的LAZYDRAW，有着更出色的表现和真实感。</span>
+            </h3>
+            <img src="i2.jpg" alt="">
+        </div>
+    </div>
+    <div class="box3">
+        <div class="w1200">
+            <h3>
+                <p>超大文件零秒导入</p>
+                <p>无限图层 毫无卡顿</p>
+                <p>无限图层 支持多格式高质量导出</p>
+            </h3>
+            <div>
+                <p>
+                    无限画布，无限图层
+                </p>
+                <img src="i3.png" alt="">
+                <p>
+                    通过独特的虚拟引擎达到真正的独一无二
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="box4">
+        <div class="w1200">
+            <img src="i4.jpg" alt="">
+            <div>
+                <h3>便携式可移动工具栏</h3>
+                <p>圆形可拖动工具栏</p>
+                <p>可拖动画笔库</p>
+                <p>便携式可拖动图层</p>
+                <p>历史画笔选项</p>
+            </div>
+        </div>
+    </div>
+    <div class="box5">
+        <h3>设计模板--你的贴心助手</h3>
+        <div class="w1200">
+            <div class="cur1">
+                <span class="a">服装人模</span>
+                <span class="b">服装单品</span>
+
+                <span class="c">绘画图纸</span>
+                <span class="d">移动设备模板</span>
+            </div>
+            <img src="i5.png" alt="">
+            <div class="cur">
+                <p>
+                    更专业的新建页面
+                </p>
+                <p>
+                    更便捷的尺寸调节
+                </p>
+                <p>
+                    在线搜索模板种类
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="box6">
+        <h3>更专业，更高质量的画笔</h3>
+        <div class="w1200">
+            <div class="cur">
+                <p>超高色彩精准度</p>
+                <p>原彩显示</p>
+                <p>自制画笔</p>
+            </div>
+            <img src="i6.png" alt="">
+            <div>
+                <p>特殊面料工艺画笔</p>
+                <p>在线下载笔刷</p>
+                <p>在线笔刷交流社区</p>
+            </div>
+        </div>
+    </div>
+    <div class="box7">
+        <h3>LAZY生态圈</h3>
+        <div class="w1200">
+            <div>
+                <p>
+                    <span>笔刷社区</span>
+                    <em>
+                        在线设计笔刷，可选择上传笔刷让其他用户付费下载。<br>
+                        下载任意笔刷后，直接使用，无需导入。
+
+                    </em>
+                </p>
+                <p>
+                    <span>设计社区</span>
+                    <em>
+                        在线交流设计作品，找到属于你的粉丝。
+                    </em>
+                </p>
+                <p>
+                    <span> 设计视频</span>
+                    <em>与大设计师联合出品的视频，让你的设计更加出色</em>
+                </p>
+            </div>
+            <img src="i7.jpg" alt="">
+        </div>
+    </div>
+    <div class="box8">
+        <div class="w1200">
+            <h3>开启你的‘LAZY’ TIME</h3>
+            <p>
+                步骤一：下载Testflight
+            </p>
+            <div>
+                <span>APP store直接搜索‘Testflight’</span>
+                <span style="display:block;">或</span>
+                <span>点击以下链接跳转至APP STORE</span><br>
+                <a href="">点击下载</a>
+            </div>
+
+            <p style="padding-top:50px;">
+                步骤二：点击下载LAZYDRAW
+            </p>
+            <a href="">点击下载</a>
+        </div>
+        <p>LAZYDRAW（绘笔）给你更专业更快的设计体验</p>
+        <p>这是属于你一个人的设计助手</p>
+        <p>沪ICP备20023692号 上海艺笺网络科技有限公司</p>
+    </div>
+</body>
+
+</html>
